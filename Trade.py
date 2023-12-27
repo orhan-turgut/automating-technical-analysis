@@ -13,8 +13,8 @@ def main(app_data):
     indication = 'Predicted'
 
     st.sidebar.subheader('Asset:')
-    asset_options = sorted(['Cryptocurrency', 'Index Fund', 'Forex'])
-    asset = st.sidebar.selectbox('', asset_options, index = 2)
+    asset_options = sorted(['Cryptocurrency'])
+    asset = st.sidebar.selectbox('', asset_options, index = 0)
 
     if asset in ['Index Fund', 'Forex', 'Futures & Commodities']:
         exchange = 'Yahoo! Finance'
